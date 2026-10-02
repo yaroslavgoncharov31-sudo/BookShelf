@@ -19,7 +19,7 @@ struct ContentView: View {
                             EmojiRatingView(rating: book.rating)
                                 .font(.largeTitle)
 
-                            VStack {
+                            VStack(alignment: .leading) {
                                 Text(book.title)
                                     .font(.headline)
 
@@ -40,7 +40,7 @@ struct ContentView: View {
             .navigationDestination(for: Book.self) { book in
                 DetailView(book: book)
             }
-            .navigationTitle("Bookworm")
+            .navigationTitle("BookShelf")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     EditButton()

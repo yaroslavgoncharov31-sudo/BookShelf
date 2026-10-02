@@ -1,9 +1,3 @@
-//
-//  DetailView.swift
-//  Bookworm
-//
-//  Created by Yaroslav on 9/15/26.
-//
 import SwiftData
 import SwiftUI
 
